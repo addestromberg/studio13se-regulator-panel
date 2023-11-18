@@ -4,37 +4,35 @@ import { RegulatorPanel } from './components/RegulatorPanel';
 
 export const plugin = new PanelPlugin<RegulatorOptions>(RegulatorPanel).setPanelOptions((builder) => {
   return builder
-    .addTextInput({
-      path: 'text',
-      name: 'Simple text option',
-      description: 'Description of panel option',
-      defaultValue: 'Default value of text input option',
+    .addFieldNamePicker({
+      path: 'timeField',
+      name: 'Time Field',
     })
-    .addBooleanSwitch({
-      path: 'showSeriesCount',
-      name: 'Show series counter',
-      defaultValue: false,
+    .addFieldNamePicker({
+      path: 'spField',
+      name: 'Setpoint Field',
     })
-    .addRadio({
-      path: 'seriesCountSize',
-      defaultValue: 'sm',
-      name: 'Series counter size',
-      settings: {
-        options: [
-          {
-            value: 'sm',
-            label: 'Small',
-          },
-          {
-            value: 'md',
-            label: 'Medium',
-          },
-          {
-            value: 'lg',
-            label: 'Large',
-          },
-        ],
-      },
-      showIf: (config) => config.showSeriesCount,
-    });
+    .addFieldNamePicker({
+      path: 'pvField',
+      name: 'Process Variable Field',
+    })
+    .addFieldNamePicker({
+      path: 'outField',
+      name: 'Output Field',
+    })
+    .addColorPicker({
+      path: 'spColor',
+      name: 'Setpoint color',
+      defaultValue: 'cyan',
+    })
+    .addColorPicker({
+      path: 'pvColor',
+      name: 'Process Variable color',
+      defaultValue: 'green',
+    })
+    .addColorPicker({
+      path: 'outColor',
+      name: 'Output color',
+      defaultValue: 'purple',
+    })
 });

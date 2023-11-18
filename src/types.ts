@@ -1,7 +1,9 @@
-type SeriesSize = 'sm' | 'md' | 'lg';
-
 export interface RegulatorOptions {
-  text: string;
-  showSeriesCount: boolean;
-  seriesCountSize: SeriesSize;
+  timeField: string;
+  spField: string;
+  pvField: string;
+  outField: string;
+  spColor: string;
+  pvColor: string;
+  outColor: string;
 }
