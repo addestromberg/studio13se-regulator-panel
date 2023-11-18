@@ -1,3 +1,5 @@
+[![CI](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml)
+
 # Grafana panel plugin template
 
 This template is a starting point for building a panel plugin for Grafana.
