@@ -108,13 +108,13 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     margin: "auto",
     marginTop: 3,
     padding: 2,
-    paddingLeft: 20,
+    paddingLeft: width *0.2,
     backgroundColor: 'rgba(0, 0, 0, 0.2)'
   }} >
     <table>
       <tr>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.spColor, width: width*0.5 }}>SP</td>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.spColor, }}>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.spColor, width: width*0.5 }}>SP</td>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.spColor, }}>
           {sp.length > 0 ? sp[sp.length - 1][1].toFixed(options.spDecimals) + options.spUnit : "N/A"}
         </td>
       </tr>
@@ -127,14 +127,14 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     margin: "auto",
     marginTop: 3,
     padding: 2,
-    paddingLeft: 20,
+    paddingLeft: width *0.2,
     backgroundColor: 'rgba(0, 0, 0, 0.2)',
     verticalAlign: "middle"
   }}>
     <table style={{padding: 10}}>
       <tr>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.pvColor, width: width*0.5}}>PV</td>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.pvColor }}>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.pvColor, width: width*0.5}}>PV</td>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.pvColor }}>
           {pv.length > 0 ? pv[pv.length - 1][1].toFixed(options.spDecimals) + options.spUnit : "N/A"}
         </td>
       </tr>
@@ -147,15 +147,15 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     margin: "auto",
     marginTop: 3,
     padding: 2,
-    paddingLeft: 20,
+    paddingLeft: width *0.2,
     backgroundColor: 'rgba(0, 0, 0, 0.2)',
     borderBottomLeftRadius: 5,
     borderBottomRightRadius: 5,
   }} >
     <table>
       <tr>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.outColor, width: width*0.5 }}>OUT</td>
-        <td style={{ fontSize: 20, fontWeight: 500, color: options.outColor }}>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.outColor, width: width*0.5 }}>OUT</td>
+        <td style={{ fontSize: 16, fontWeight: 300, color: options.outColor }}>
           {out.length > 0 ? out[out.length - 1][1].toFixed(options.outDecimals) + options.outUnit : "N/A"}
         </td>
       </tr>
