@@ -6,4 +6,8 @@ export interface RegulatorOptions {
   spColor: string;
   pvColor: string;
   outColor: string;
+  spUnit: string;
+  outUnit: string;
+  spDecimals: number;
+  outDecimals: number;
 }

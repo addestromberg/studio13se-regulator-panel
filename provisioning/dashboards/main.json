@@ -28,8 +28,8 @@
         "uid": "grafana"
       },
       "gridPos": {
-        "h": 8,
-        "w": 5,
+        "h": 10,
+        "w": 4,
         "x": 0,
         "y": 0
       },
@@ -38,14 +38,17 @@
         "outColor": "magenta",
         "outField": "C-series",
         "outTrendColor": "magenta",
+        "outUnit": "%",
         "pvColor": "green",
         "pvField": "B-series",
         "pvTrendColor": "green",
         "seriesCountSize": "sm",
         "showSeriesCount": false,
         "spColor": "cyan",
+        "spDecimal": 2,
         "spField": "A-series",
         "spTrendColor": "cyan",
+        "spUnit": "°C",
         "text": "Default value of text input option",
         "timeField": "time"
       },
@@ -102,6 +105,6 @@
   "timezone": "",
   "title": "Dev Dashboard",
   "uid": "f098f54b-4272-4670-be1e-d85cfb45251f",
-  "version": 4,
+  "version": 6,
   "weekStart": ""
 }
