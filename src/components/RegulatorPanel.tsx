@@ -80,13 +80,10 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     };
 
 
-    //const colors = {colors: [options.spColor, options.pvColor, options.outColor]};
-
     ($ as any).plot(
       canvas,
       plot,
       opts,
-
     );
   });
 
@@ -98,7 +95,7 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
     padding: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: options.backgroundTint,
     margin: "auto"
   }} />;
 
@@ -109,13 +106,13 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     marginTop: 3,
     padding: 2,
     paddingLeft: width *0.2,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)'
+    backgroundColor: options.backgroundTint
   }} >
     <table>
       <tr>
         <td style={{ fontSize: 16, fontWeight: 300, color: options.spColor, width: width*0.5 }}>SP</td>
         <td style={{ fontSize: 16, fontWeight: 300, color: options.spColor, }}>
-          {sp.length > 0 ? sp[sp.length - 1][1].toFixed(options.spDecimals) + options.spUnit : "N/A"}
+          {sp.length > 0 ? Number(sp[sp.length - 1][1]).toFixed(options.spDecimals) + options.spUnit : "N/A"}
         </td>
       </tr>
     </table>
@@ -128,7 +125,7 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     marginTop: 3,
     padding: 2,
     paddingLeft: width *0.2,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: options.backgroundTint,
     verticalAlign: "middle"
   }}>
     <table style={{padding: 10}}>
@@ -148,7 +145,7 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     marginTop: 3,
     padding: 2,
     paddingLeft: width *0.2,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: options.backgroundTint,
     borderBottomLeftRadius: 5,
     borderBottomRightRadius: 5,
   }} >

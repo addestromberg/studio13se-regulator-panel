@@ -4,6 +4,11 @@ import { RegulatorPanel } from './components/RegulatorPanel';
 
 export const plugin = new PanelPlugin<RegulatorOptions>(RegulatorPanel).setPanelOptions((builder) => {
   return builder
+    .addColorPicker({
+      path: 'backgroundTint',
+      name: 'Background Tint',
+      defaultValue: '#00000033',
+    })
     .addFieldNamePicker({
       path: 'timeField',
       name: 'Time Field',
@@ -14,14 +19,14 @@ export const plugin = new PanelPlugin<RegulatorOptions>(RegulatorPanel).setPanel
       defaultValue: "°C"
     })
     .addNumberInput({
-      path: "spDecimal",
+      path: "spDecimals",
       name: "SP/PV Decimals",
       defaultValue: 2
     })
     .addColorPicker({
       path: 'spColor',
       name: 'Setpoint color',
-      defaultValue: 'cyan',
+      defaultValue: '#00ddffcc',
     })
     .addFieldNamePicker({
       path: 'spField',
@@ -30,7 +35,7 @@ export const plugin = new PanelPlugin<RegulatorOptions>(RegulatorPanel).setPanel
     .addColorPicker({
       path: 'pvColor',
       name: 'Process Variable color',
-      defaultValue: 'green',
+      defaultValue: '#1eff00cc',
     })
     .addFieldNamePicker({
       path: 'pvField',
@@ -42,14 +47,14 @@ export const plugin = new PanelPlugin<RegulatorOptions>(RegulatorPanel).setPanel
       defaultValue: "%"
     })
     .addNumberInput({
-      path: "spDecimal",
+      path: "outDecimals",
       name: "Output Decimals",
       defaultValue: 2
     })
     .addColorPicker({
       path: 'outColor',
       name: 'Output color',
-      defaultValue: 'purple',
+      defaultValue: '#ff00ffcc',
     })
     .addFieldNamePicker({
       path: 'outField',

@@ -10,4 +10,5 @@ export interface RegulatorOptions {
   outUnit: string;
   spDecimals: number;
   outDecimals: number;
+  backgroundTint: string;
 }

@@ -35,21 +35,18 @@
       },
       "id": 1,
       "options": {
-        "outColor": "magenta",
+        "backgroundTint": "#00000033",
+        "outColor": "#ff00ffcc",
+        "outDecimals": 2,
         "outField": "C-series",
-        "outTrendColor": "magenta",
         "outUnit": "%",
-        "pvColor": "green",
+        "pvColor": "#1eff00cc",
         "pvField": "B-series",
-        "pvTrendColor": "green",
-        "seriesCountSize": "sm",
-        "showSeriesCount": false,
-        "spColor": "cyan",
+        "spColor": "#00ddffcc",
         "spDecimal": 2,
+        "spDecimals": 2,
         "spField": "A-series",
-        "spTrendColor": "cyan",
         "spUnit": "°C",
-        "text": "Default value of text input option",
         "timeField": "time"
       },
       "targets": [
@@ -80,7 +77,7 @@
           "refId": "C"
         }
       ],
-      "title": "Regulator Dev",
+      "title": "Regulator Development",
       "transformations": [
         {
           "id": "concatenate",
@@ -105,6 +102,6 @@
   "timezone": "",
   "title": "Dev Dashboard",
   "uid": "f098f54b-4272-4670-be1e-d85cfb45251f",
-  "version": 6,
+  "version": 8,
   "weekStart": ""
 }
