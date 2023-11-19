@@ -4,7 +4,7 @@ Remove any remaining comments before publishing as these may be displayed on Gra
 
 # Regulator
 
-A simple visualisation for regulator heavily inspired by dcs scada software used in processing industries
+A simple visualisation for regulators heavily inspired by dcs/scada software used in processing industries.
 
 <!-- To help maximize the impact of your README and improve usability for users, we propose the following loose structure:
 
@@ -29,20 +29,21 @@ to create dynamic badges that update automatically when you publish a new versio
 Full example: ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?logo=grafana&query=$.version&url=https://grafana.com/api/plugins/grafana-polystat-panel&label=Marketplace&prefix=v&color=F47A20)
 
 Consider other [badges](https://shields.io/badges) as you feel appropriate for your project.
-
+-->
 ## Overview / Introduction
-Provide one or more paragraphs as an introduction to your plugin to help users understand why they should use it.
-
+Useful for PID trimming and quick overview of regulators.
+<!--
 Consider including screenshots:
 - in [plugin.json](https://grafana.com/developers/plugin-tools/reference-plugin-json#info) include them as relative links.
 - in the README ensure they are absolute URLs.
 
 ## Requirements
 List any requirements or dependencies they may need to run the plugin.
-
+-->
 ## Getting Started
-Provide a quick start on how to configure and use the plugin.
-
+Just pick your setpoint, process value and your output signal. As simple as that.
+If you get your regulator timeseries from several queries you need to concatenate fields to a single dataframe.
+<!-->
 ## Documentation
 If your project has dedicated documentation available for users, provide links here. For help in following Grafana's style recommendations for technical documentation, refer to our [Writer's Toolkit](https://grafana.com/docs/writers-toolkit/).
 

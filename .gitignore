@@ -8,6 +8,7 @@ yarn-error.log*
 
 node_modules/
 
+.env
 # Runtime data
 pids
 *.pid
