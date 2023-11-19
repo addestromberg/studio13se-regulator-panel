@@ -37,20 +37,45 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
       }
     });
 
-    const plot = [sp, pv, out];
+    const plot = [
+      {label: "SP", data: sp}, 
+      {label: "PV", data: pv},
+      {label: "OUT", data: out}
+    ];
     
     const opts = {
+      series: {
+        lines: {
+            lineWidth: 1
+        }
+      },
       xaxis: {
         mode: "time",
         timeformat: "%H:%M",
         minTickSize: [15, "minute"]
       },
+      yaxes: [ { }, { position: "right", min: 0, max: 100 } ],
       
+      legend: {
+        show: false,
+        noColumns: 1,
+        position: "ne",
+        margin: [-25,25],
+        backgroundColor: null,
+        backgroundOpacity: 0,
+    },
+
       grid: {
+        hoverable: true,
         show: true,
         color: "lightgrey",
         borderWidth: 0,
-        margin: 5
+        margin: {
+          top: 25,
+          left: 25,
+          bottom: 0,
+          right: 0,
+        },
       },
       colors: [options.spColor, options.pvColor, options.outColor],
     };
@@ -66,7 +91,20 @@ export const RegulatorPanel: React.FC<Props> = ({ options, data, width, height }
     );
   });
 
-  const trend = <div ref={ref} style={{ width: width, height: width/1.2 }} />;
   
-  return trend;
+
+  const trend = <div ref={ref} style={{ width: width/1, height: width/1.75, borderRadius: 5, padding: 10 ,backgroundColor: "black", margin: "auto" }} />;
+  const spBlock = <div style={{width: width/1, height: width/10, margin: "auto", backgroundColor: options.spColor }}></div>;
+  const pvBlock = <div style={{width: width/1, height: width/10, margin: "auto", backgroundColor: options.pvColor }}></div>;
+  const outBlock = <div style={{width: width/1, height: width/10, margin: "auto", backgroundColor: options.outColor }}></div>;
+
+  // Return the jsx template here
+  return (
+    <div style={{}}>
+      {trend}
+      {spBlock}
+      {pvBlock}
+      {outBlock}
+    </div>
+    );
 };
