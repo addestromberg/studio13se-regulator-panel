@@ -1,4 +1,4 @@
-[![CI](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml)
+[![CI](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml) [![Release](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/release.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/release.yml)
 
 # Grafana panel plugin template
 
