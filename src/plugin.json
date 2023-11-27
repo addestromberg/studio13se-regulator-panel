@@ -18,8 +18,8 @@
       "email": "adde@upperfield.se"
     },
     "logos": {
-      "small": "./img/logo.svg",
-      "large": "./img/logo.svg"
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
     },
     "links": [
       {
@@ -30,11 +30,11 @@
     "screenshots": [
       {
         "name": "Standard Settings",
-        "path": "./img/screen1.png"
+        "path": "img/screen1.png"
       },
       {
         "name": "With custom background",
-        "path": "./img/screen2.png"
+        "path": "img/screen2.png"
       }
     ],
     "version": "%VERSION%",

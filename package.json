@@ -13,7 +13,7 @@
     "e2e": "npm exec cypress install && npm exec grafana-e2e run",
     "e2e:update": "npm exec cypress install && npm exec grafana-e2e run --update-screenshots",
     "server": "docker-compose up --build",
-    "sign": "npx --yes @grafana/sign-plugin@latest --rootUrls http://localhost:3000"
+    "sign": "npx --yes @grafana/sign-plugin@latest"
   },
   "author": "Studio13",
   "license": "Apache-2.0",
