@@ -43,7 +43,7 @@ List any requirements or dependencies they may need to run the plugin.
 ## Getting Started
 Just pick your setpoint, process value and your output signal. As simple as that.
 If you get your regulator timeseries from several queries you need to concatenate fields to a single dataframe.
-<!-->
+<!--
 ## Documentation
 If your project has dedicated documentation available for users, provide links here. For help in following Grafana's style recommendations for technical documentation, refer to our [Writer's Toolkit](https://grafana.com/docs/writers-toolkit/).
 -->
