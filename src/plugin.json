@@ -4,17 +4,39 @@
   "name": "Regulator",
   "id": "studio13se-regulator-panel",
   "info": {
-    "keywords": ["panel"],
-    "description": "A simple visualisation for regulator heavily inspired by dcs scada software used in processing industries",
+    "keywords": [
+      "panel",
+      "regulator",
+      "scada",
+      "dcs",
+      "studio13",
+      "studio 13"
+    ],
+    "description": "A simple visualisation for regulators, heavily inspired by DCS/SCADA software used in processing industries",
     "author": {
-      "name": "Studio13 se"
+      "name": "adde1",
+      "email": "adde@upperfield.se"
     },
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [],
-    "screenshots": [],
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/addestromberg/"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "Standard Settings",
+        "path": "img/screen1.png"
+      },
+      {
+        "name": "With custom background",
+        "path": "img/screen2.png"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },

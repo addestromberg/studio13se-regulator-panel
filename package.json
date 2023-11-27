@@ -15,7 +15,7 @@
     "server": "docker-compose up --build",
     "sign": "npx --yes @grafana/sign-plugin@latest"
   },
-  "author": "Studio13 se",
+  "author": "adde1",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.21.4",
