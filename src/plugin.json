@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Regulator",
-  "id": "studio13se-regulator-panel",
+  "id": "adde1-regulator-panel",
   "info": {
     "keywords": [
       "panel",
