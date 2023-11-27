@@ -18,8 +18,8 @@
       "email": "adde@upperfield.se"
     },
     "logos": {
-      "small": "img/logo.svg",
-      "large": "img/logo.svg"
+      "small": "./img/logo.svg",
+      "large": "./img/logo.svg"
     },
     "links": [
       {
