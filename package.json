@@ -1,6 +1,6 @@
 {
   "name": "regulator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple visualisation for regulator heavily inspired by dcs scada software used in processing industries",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
