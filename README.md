@@ -1,7 +1,6 @@
 [![CI](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faddestromberg%2Fstudio13se-regulator-panel%2Fmain%2Fpackage.json&query=%24.version&prefix=v&logo=grafana&label=Version)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faddestromberg%2Fstudio13se-regulator-panel%2Fmain%2Fpackage.json&query=%24.license&logo=grafana&label=License)
-
 [![Catalog](https://img.shields.io/badge/dynamic/json?logo=grafana&color=F47A20&label=catalog&prefix=v&query=%24.items%5B%3F%28%40.slug%20%3D%3D%20%22adde1-regulator-panel%22%29%5D.version&url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins)](https://grafana.com/grafana/plugins/adde1-regulator-panel>)
 [![Downloads](https://img.shields.io/badge/dynamic/json?logo=grafana&color=F47A20&label=downloads&query=%24.items%5B%3F%28%40.slug%20%3D%3D%20%22adde1-regulator-panel%22%29%5D.downloads&url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins)](https://grafana.com/grafana/plugins/adde1-regulator-panel)
 
