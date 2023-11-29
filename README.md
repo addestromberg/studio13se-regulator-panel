@@ -1,4 +1,6 @@
 [![CI](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml/badge.svg)](https://github.com/addestromberg/studio13se-regulator-panel/actions/workflows/ci.yml)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faddestromberg%2Fstudio13se-regulator-panel%2Fmain%2Fpackage.json&query=%24.version&prefix=v&logo=grafana&label=Version)
+
 <!-- This README file is going to be the one displayed on the Grafana.com website for your plugin. Uncomment and replace the content here before publishing.
 
 Remove any remaining comments before publishing as these may be displayed on Grafana.com -->
